@@ -200,6 +200,8 @@ body{
     align-items: center;
 }
 
+
+
 .check__input{
     height: 40px;
     width: 40px;
@@ -215,9 +217,10 @@ body{
     background-image: url(img/burger.png);
 }
 
-.check__input:checked{
+.check__input:checked + .check__box{
     background-image: url("img/close.png");
 }
+
 
 
 
