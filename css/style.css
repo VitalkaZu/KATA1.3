@@ -47,7 +47,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-style: normal;
     font-weight: 400;
     src:local("Lakes"),
-        url("/fonts/TTLakes-Regular.woff");
+        url("../fonts/TTLakes-Regular.woff");
 }
 
 
@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-style: normal;
     font-weight: bold;
     src:local("Lakes"),
-    url("/fonts/TTLakes-Bold.woff");
+    url("../fonts/TTLakes-Bold.woff");
 }
 
 
@@ -68,7 +68,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     font-style: normal;
     font-weight: 500;
     src:local("Lakes"),
-    url("/fonts/TTLakes-Medium.woff");
+    url("../fonts/TTLakes-Medium.woff");
 }
 
         /*Переменные*/
