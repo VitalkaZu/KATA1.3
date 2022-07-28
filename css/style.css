@@ -71,11 +71,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     url("../fonts/TTLakes-Medium.woff");
 }
 
-        /*Переменные*/
-:root{
-    --margin-horizontal:16px;
-}
-
 
 html {
     font-family: Lakes,sans-serif;
@@ -123,7 +118,6 @@ html {
     align-items: center;
     height: 88px;
     border-bottom: #D9FFF5 solid 1px;
-    /*background-color: burlywood;*/
 }
 
 .header__navigation{
@@ -176,12 +170,6 @@ html {
 .item-nav:hover {
     opacity: 70%;
 }
-
-/*.text_item:hover{*/
-/*    opacity: 70%;*/
-/*}*/
-
-
 
 .dop-menu{
     display: none;
@@ -337,7 +325,6 @@ html {
     min-width: 320px;
     width: 50%;
     height: 176px;
-    /*flex-basis: 50%;*/
 }
 
 
