@@ -77,30 +77,57 @@ html {
     font-size: 16px;
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.center{
+.width-size{
+    width: 320px;
+}
+
+.container{
+    padding: 0 16px;
+}
+
+.container-article{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 320px;
     background-color: #F8F8F8;
-    margin: 0 auto;
-    padding: 24px 16px 0;
 }
 
-.center--article{
-    padding: 0;
-}
 
 
         /*header*/
 .header{
-    background-color: white;
 
 }
 
+.header__top{
+    background-color: white;
+    border-bottom: #D9FFF5 solid 1px;
+}
+
+.header__bottom{
+    padding-top: 24px;
+    background: #F8F8F8;
+}
+
+.bottom-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
 .logo{
     height: 55px;
+    position: relative;
+    display: flex;
+    gap: inherit;
+    align-items: center;
 }
 
 .logo__link{
@@ -117,14 +144,8 @@ html {
     gap: 16px;
     align-items: center;
     height: 88px;
-    border-bottom: #D9FFF5 solid 1px;
 }
 
-.header__navigation{
-    width: 320px;
-    padding: 0 16px;
-    margin: 0 auto;
-}
 
 .navigation__side{
     display: flex;
@@ -132,6 +153,10 @@ html {
     gap: 16px;
 
 }
+
+/*.navigation__side--88px{*/
+/*    height: 88px;*/
+/*}*/
 
 
 .item-nav__background{
@@ -148,6 +173,14 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.item-nav__img2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#FF3E79;
 }
 
 .text_item__text{
@@ -190,19 +223,10 @@ html {
     margin-right: 4px;
 }
 
-.container__main-menu{
+.bottom-header__main-menu{
     display: none;
     margin-left: auto;
 }
-
-.burger{
-    /*padding-left: 74px;*/
-    position: relative;
-    display: flex;
-    gap: inherit;
-    align-items: center;
-}
-
 
 .picture{
     width: 100%;
@@ -278,6 +302,7 @@ html {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    column-gap: 48px;
 }
 
 
@@ -288,7 +313,7 @@ html {
 
 .about-us__text-container{
     padding: 0 16px;
-    flex:1 0 50%;
+    flex:1 1 auto;
 }
 
 .about-us__paragraph {
@@ -301,20 +326,23 @@ html {
     margin-top: 1.5em;
 }
 
+.button{
+    display: flex;
+    gap:12px;
+    align-items: center;
+}
+
 .about-us__button{
     padding: 16px 0;
 }
 
 
 .button__text{
-    display: flex;
-    gap:12px;
-    align-items: center;
     font-size: 16px;
     font-weight: 500;
 }
 
-.button__text:before{
+.button:before{
     background: url(../img/readmore.png) no-repeat 50% 50%;
     content: "";
     height: 24px;
@@ -322,29 +350,23 @@ html {
 }
 
 .about-us__img{
-    min-width: 320px;
-    width: 50%;
-    height: 176px;
+    flex:0 0 320px;
 }
 
 
 @media (min-width: 768px) {
-
-    .header__navigation{
-        padding: 0 24px;
-    }
-
-    .center,.header__navigation {
+    .width-size{
         width: 768px;
     }
 
-    .center{
-        padding: 24px 24px 0;
-    }
-
-    .center--article{
+    .container{
         padding: 0 24px;
     }
+
+    .container-article{
+        padding: 0 24px;
+    }
+
 
     .scroll-menu{
         padding: 32px 0;
@@ -370,7 +392,7 @@ html {
         gap: 20px;
     }
 
-    .burger:after{
+    .logo:before{
         border-left: 2px solid #EAEAEA;
         content: "";
         height: 32px;
@@ -389,11 +411,11 @@ html {
     }
 
     .about-us__img{
-        height: 208px;
+        flex-basis: 360px;
     }
 
     .about-us__text-container{
-        padding: 0 48px 0 0;
+        padding: 0;
     }
 
     .about-us__button {
@@ -406,29 +428,31 @@ html {
         padding: 8px 0 0 0;
     }
 
-    .center, .header__navigation {
+    .width-size{
         width: 1120px;
     }
 
-    .center{
-        padding: 42px 32px 0;
-    }
-
-    .center--article{
+    .container{
         padding: 0 32px;
     }
+
+    .container-article{
+        padding: 0 32px;
+    }
+
 
     .item-nav__text {
         display: inline-block;
     }
 
-    .container__main-menu{
+    .bottom-header__main-menu{
         display: flex;
     }
 
-    header {
+    .header__top {
         display: none;
     }
+
 
     .main__container{
         gap: 8px;
@@ -444,16 +468,20 @@ html {
         left:-32px;
     }
 
+    .about-us{
+        column-gap: 36px;
+    }
+
     .about-us__text-container{
         margin-top: 10px;
     }
 
     .about-us__img{
-        height: 384px;
+        flex-basis: 531px;
     }
 
     .about-us__text-container{
-        padding: 0 36px 0 0;
+        padding: 0;
     }
 }
 
