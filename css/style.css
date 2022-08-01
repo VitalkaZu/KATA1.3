@@ -94,6 +94,7 @@ html {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: end;
 }
 
 .header::-webkit-scrollbar {
@@ -107,7 +108,7 @@ html {
 }
 
 .header__title{
-    padding-top: 24px;
+    margin-top: 24px;
 }
 
 .bottom-header{
@@ -496,6 +497,7 @@ html {
 
     .header__title{
         order: -1;
+        margin-top: 42px;
     }
 
     .dop-menu, .navigation__column-left{
@@ -504,6 +506,10 @@ html {
 
     .sub-main:before{
         display: none;
+    }
+
+    .navigation{
+        height: auto;
     }
 }
 
