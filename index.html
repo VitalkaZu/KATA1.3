@@ -7,56 +7,59 @@
     <title>Услуги и сервисы</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="width-size">
+        <div class="wrapper">
             <header class="header">
                 <div class="header__top">
                     <div class="container">
-                        <div class="navigation">
-                            <ul class="navigation__side">
+                        <nav class="navigation">
+                            <ul class="navigation__column navigation__column-left">
                                 <li><button class="item-nav item-nav__background"><img class="item-nav__img" src="img/burger.png"></button></li>
-                                <li class="logo"><a class="logo__link" href="#"><img class="logo__img" src="img/logo.png" height="52px" alt="Logo"></a>                                </li>
+                                <li class="logo sub-menu"><a class="logo__link" href="#"><img class="logo__img" src="img/logo.png" height="52px" alt="Logo"></a>                                </li>
                             </ul>
-                            <nav class="navigation__side">
-                                <ul class="dop-menu">
-                                    <li><button class="item-nav item-nav__background"><img class="item-nav__img" src="img/phone.png"></button></li>
-                                    <li><button class="item-nav item-nav__background"><img class="item-nav__img" src="img/chat.png"></button></li>
-                                    <li><a class="item-nav item-nav__background" href="#"><img class="item-nav__img" src="img/profile.png"></a></li>
-                                </ul>
-                                <ul class="main-menu navigation__main-menu">
-                                    <li><a class="item-nav" href="#"><span class="item-nav__text">Оставить заявку</span><div class="item-nav__background"><img class="item-nav__img" src="img/repair.png"></div></a></li>
-                                    <li><a class="item-nav" href="#"><span class="item-nav__text">Статус ремонта</span><div class="item-nav__background"><img class="item-nav__img" src="img/checkstatus.png"></div></a></li>
-                                </ul>
-                            </nav>
-                        </div>
+                            <ul class="navigation__column navigation__column-right">
+                                <li class="sub-menu sub-dop">
+                                    <ul class="dop-menu">
+                                        <li><button class="item-nav item-nav__background"><img class="item-nav__img" src="img/phone.png"></button></li>
+                                        <li><button class="item-nav item-nav__background"><img class="item-nav__img" src="img/chat.png"></button></li>
+                                        <li><a class="item-nav item-nav__background" href="#"><img class="item-nav__img" src="img/profile.png"></a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu sub-main">
+                                    <ul class="main-menu navigation__main-menu">
+                                        <li><a class="item-nav" href="#"><span class="item-nav__text">Оставить заявку</span><div class="item-nav__background"><img class="item-nav__img" src="img/repair.png"></div></a></li>
+                                        <li><a class="item-nav" href="#"><span class="item-nav__text">Статус ремонта</span><div class="item-nav__background"><img class="item-nav__img" src="img/checkstatus.png"></div></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+
                     </div>
                 </div>
-                <div class="header__bottom">
+                <div class="header__title">
                     <div class="container">
                         <div class="bottom-header">
                             <h1 class="title"><span class="title__text">Услуги и сервисы</span></h1>
-                            <!--Этот блок пока дублируется, потом будет переноситься JS-->
-                            <ul class="main-menu bottom-header__main-menu">
-                                <li><a class="item-nav" href="#"><span class="item-nav__text">Оставить заявку</span><div class="item-nav__background"><img class="item-nav__img" src="img/repair.png"></div></a></li>
-                                <li><a class="item-nav" href="#"><span class="item-nav__text">Статус ремонта</span><div class="item-nav__background"><img class="item-nav__img" src="img/checkstatus.png"></div></a></li>
-                            </ul>
-                            <nav class="scroll-menu">
-                                <ul class="scroll-menu__items">
-                                    <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Ремонтируемые бренды</span></a></li>
-                                    <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Дополнительные услуги</span></a></li>
-                                    <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Цены на услуги</span></a></li>
-                                    <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Адреса сервисных центров</span></a></li>
-                                    <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Специальные цены</span></a></li>
-                                    <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Отзывы</span></a></li>
-                                </ul>
-                            </nav>
                         </div>
                     </div>
                 </div>
+
             </header>
+            <div class="header__scroll">
+                <div class="container">
+                    <nav class="scroll-menu">
+                        <ul class="scroll-menu__items">
+                            <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Ремонтируемые бренды</span></a></li>
+                            <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Дополнительные услуги</span></a></li>
+                            <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Цены на услуги</span></a></li>
+                            <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Адреса сервисных центров</span></a></li>
+                            <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Специальные цены</span></a></li>
+                            <li><a class="scroll-menu__item" href="#"><span class="scroll-menu__text">Отзывы</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
             <main class="main">
-                <section>
-                    <div class="container-article">
+                <section class="container-article">
                         <article class="about-us">
                             <div class="about-us__text-container">
                                 <div class="about-us__text">
@@ -69,10 +72,8 @@
                                 <img class="picture picture--radius-corner" src="pictures/cps.jpg" alt="CPS">
                             </div>
                         </article>
-                    </div>
                 </section>
             </main>
         </div>
-    </div>
 </body>
 </html>

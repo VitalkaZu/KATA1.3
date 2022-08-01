@@ -77,42 +77,37 @@ html {
     font-size: 16px;
 }
 
+/*Ограничение по ширине и центровка*/
 .wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.width-size{
     width: 320px;
+    margin: 0 auto;
+    background: #F8F8F8;
 }
 
+/*Контейнер с паддинигами*/
 .container{
     padding: 0 16px;
 }
 
-.container-article{
+/*header*/
+.header{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #F8F8F8;
 }
 
-
-
-        /*header*/
-.header{
-
+.header::-webkit-scrollbar {
+    height: 0;
 }
 
 .header__top{
+    flex-grow: 1;
     background-color: white;
     border-bottom: #D9FFF5 solid 1px;
 }
 
-.header__bottom{
+.header__title{
     padding-top: 24px;
-    background: #F8F8F8;
 }
 
 .bottom-header{
@@ -125,9 +120,9 @@ html {
 .logo{
     height: 55px;
     position: relative;
-    display: flex;
-    gap: inherit;
-    align-items: center;
+    /*display: flex;*/
+    /*gap: inherit;*/
+    /*align-items: center;*/
 }
 
 .logo__link{
@@ -147,24 +142,20 @@ html {
 }
 
 
-.navigation__side{
+.navigation__column{
     display: flex;
     align-items: center;
     gap: 16px;
 
 }
 
-/*.navigation__side--88px{*/
-/*    height: 88px;*/
-/*}*/
-
-
+/*Элемента навигаци круглый*/
 .item-nav__background{
     position: relative;
     background-color:#FF3E79;
     width: 40px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 50%;
     opacity: inherit;
 }
 
@@ -173,14 +164,6 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.item-nav__img2{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color:#FF3E79;
 }
 
 .text_item__text{
@@ -215,22 +198,29 @@ html {
     align-items: center;
 }
 
-    /*Разделиитель вертикальный*/
-.navigation__main-menu:before{
-    border-left: 2px solid #EAEAEA;
-    content: "";
-    height: 32px;
-    margin-right: 4px;
+/*Разделиитель вертикальный*/
+.sub-menu:nth-child(2){
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
-.bottom-header__main-menu{
+.sub-menu:nth-child(2):before{
+        border-left: 2px solid #EAEAEA;
+        content: "";
+        height: 32px;
+}
+
+
+/*Отключаем разделитель между бургером и лого на мобилке*/
+.logo:before{
     display: none;
-    margin-left: auto;
 }
 
-.picture{
-    width: 100%;
+.navigation__column-right{
+    gap:0;
 }
+
 
 /*Заголовок страницы*/
 
@@ -297,6 +287,13 @@ html {
 
 
         /*Контейнер для article*/
+
+.container-article{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .about-us{
     display: flex;
     justify-content: space-between;
@@ -326,6 +323,8 @@ html {
     margin-top: 1.5em;
 }
 
+/*Кнопка чтать далее*/
+
 .button{
     display: flex;
     gap:12px;
@@ -349,13 +348,20 @@ html {
     width: 24px;
 }
 
+/*Картинка статьи*/
+
 .about-us__img{
     flex:0 0 320px;
+    height: 176px;
+}
+
+.picture{
+    width: 100%;
 }
 
 
 @media (min-width: 768px) {
-    .width-size{
+    .wrapper{
         width: 768px;
     }
 
@@ -388,15 +394,10 @@ html {
         display: flex;
     }
 
-    .navigation__side {
+    .navigation__column {
         gap: 20px;
     }
 
-    .logo:before{
-        border-left: 2px solid #EAEAEA;
-        content: "";
-        height: 32px;
-    }
 
     .main__container {
         gap: 32px;
@@ -412,7 +413,9 @@ html {
 
     .about-us__img{
         flex-basis: 360px;
+        height: 176px;
     }
+
 
     .about-us__text-container{
         padding: 0;
@@ -421,6 +424,11 @@ html {
     .about-us__button {
         padding: 10px 0 0;
     }
+
+    .logo:before{
+        display: inline-block;
+    }
+
     }
 
 @media (min-width: 1120px) {
@@ -428,7 +436,7 @@ html {
         padding: 8px 0 0 0;
     }
 
-    .width-size{
+    .wrapper{
         width: 1120px;
     }
 
@@ -448,11 +456,6 @@ html {
     .bottom-header__main-menu{
         display: flex;
     }
-
-    .header__top {
-        display: none;
-    }
-
 
     .main__container{
         gap: 8px;
@@ -478,10 +481,29 @@ html {
 
     .about-us__img{
         flex-basis: 531px;
+        height: 307px;
     }
 
     .about-us__text-container{
         padding: 0;
+    }
+
+    .header__top {
+        background-color: transparent;
+        border-bottom: none;
+        flex-grow: 0;
+    }
+
+    .header__title{
+        order: -1;
+    }
+
+    .dop-menu, .navigation__column-left{
+        display: none;
+    }
+
+    .sub-main:before{
+        display: none;
     }
 }
 
