@@ -1,58 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style2.css" rel="stylesheet">
-    <title>Title</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="style2.css" rel="stylesheet">
+	<title>Title</title>
 </head>
 <body>
 <aside class="container">
   <div class="wrapper popup-menu">
-      <div class="popup-menu__top">
-          <nav class="navigation">
-            <ul class="navigation__column">
-              <li><button class="icon icon__background"><img class="icon__img" src="../img/icon/close.png" alt="close"></button></li>
-              <li class="logo sub-menu"><a class="logo__link" href="#"><img class="logo__img" src="../img/logo.png" height="52px" alt="Logo"></a>                                </li>
-            </ul>
-            <ul class="navigation__column">
-              <li class="sub-menu sub-dop">
-                  <ul class="dop-menu">
-                      <li><button class="icon icon__background"><img class="icon__img" src="../img/icon/search.png" alt="search"></button></li>
-                  </ul>
-              </li>
-            </ul>
-        </nav>
-          <nav class="menu">
-            <ul class="menu__items">
-              <li><a class="menu__item" href="#"><span class="menu__text">Ремонт техники</span></a></li>
-              <li><a class="menu__item" href="#"><span class="menu__text">Услуги и сервисы</span></a></li>
-              <li><a class="menu__item" href="#"><span class="menu__text">Корпоративным клиентам</span></a></li>
-              <li><a class="menu__item" href="#"><span class="menu__text">Продавцам техники</span></a></li>
-              <li><a class="menu__item" href="#"><span class="menu__text">Партнерам</span></a></li>
-                <li><a class="menu__item" href="#"><span class="menu__text">Производителям</span></a></li>
-                <li><a class="menu__item" href="#"><span class="menu__text">Наши сервисные центры</span></a></li>
-                <li><a class="menu__item" href="#"><span class="menu__text">Контакты</span></a></li>
-            </ul>
-          </nav>
-      </div>
-      <div class="popup-menu__bottom">
-          <ul class="dop-menu">
-            <li><button class="icon icon__background"><img class="icon__img" src="../img/icon/phone.png" alt="phone"></button></li>
-            <li><button class="icon icon__background"><img class="icon__img" src="../img/icon/chat.png" alt="chat"></button></li>
-            <li><a class="icon icon__background" href="#"><img class="icon__img" src="../img/icon/profile.png" alt="profile"></a></li>
-          </ul>
-          <a class="mail-link" href="mail@cps.com">mail@cps.com</a>
-          <a class="phone-link" href="8 800 890 8900">8 800 890 8900</a>
-          <form class="lang-select popup-menu__lang-select">
-              <input  class="lang-select__radio"id="ru" type="radio" name="lang" checked>
-              <label class="lang-select__label" for="ru">RU</label>
-              <input class="lang-select__radio" id="en" type="radio" name="lang">
-              <label class="lang-select__label" for="en">EN</label>
-              <input class="lang-select__radio" id="ch" type="radio" name="lang">
-              <label class="lang-select__label" for="ch">CH</label>
-          </form>
-      </div>
+	  <div class="popup-menu__top">
+		  <nav class="popup-menu__header">
+			<ul class="popup-menu__list">
+			  <li><button class="icon"><img src="../img/icon/close.png" alt="close"></button></li>
+			  <li class="logo"><a class="logo__link" href="#"><img class="logo__img" src="../img/logo.png" alt="Logo"></a></li>
+			</ul>
+			<ul class="popup-menu__list">
+				<li><button class="icon"><img src="../img/icon/search.png" alt="search"></button></li>
+			</ul>
+		</nav>
+		  <nav class="popup-menu__menu">
+			<ul class="popup-menu__links">
+			  <li><a class="popup-menu__link" href="#">Ремонт техники</a></li>
+			  <li><a class="popup-menu__link" href="#">Услуги и сервисы</a></li>
+			  <li><a class="popup-menu__link" href="#">Корпоративным клиентам</a></li>
+			  <li><a class="popup-menu__link" href="#">Продавцам техники</a></li>
+			  <li><a class="popup-menu__link" href="#">Партнерам</a></li>
+              <li><a class="popup-menu__link" href="#">Производителям</a></li>
+              <li><a class="popup-menu__link" href="#">Наши сервисные центры</a></li>
+              <li><a class="popup-menu__link" href="#">Контакты</a></li>
+			</ul>
+		  </nav>
+	  </div>
+	  <div class="popup-menu__bottom">
+		  <ul class="dop-menu">
+			<li><button class="icon"><img src="../img/icon/phone.png" alt="phone"></button></li>
+			<li><button class="icon"><img src="../img/icon/chat.png" alt="chat"></button></li>
+			<li><a class="icon" href="#"><img src="../img/icon/profile.png" alt="profile"></a></li>
+		  </ul>
+		  <button id="mail-button" class="mail-link">mail@cps.com</button>
+		  <button id="call-button" class="phone-link">8 800 890 8900</button>
+		  <form class="lang-select popup-menu__lang-select">
+			  <input  class="lang-select__radio" id="ru" type="radio" name="lang" checked>
+			  <label class="lang-select__label" for="ru">RU</label>
+			  <input class="lang-select__radio" id="en" type="radio" name="lang">
+			  <label class="lang-select__label" for="en">EN</label>
+			  <input class="lang-select__radio" id="ch" type="radio" name="lang">
+			  <label class="lang-select__label" for="ch">CH</label>
+		  </form>
+	  </div>
   </div>
 </aside>
 </body>
