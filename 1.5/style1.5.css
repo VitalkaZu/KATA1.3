@@ -1,0 +1,134 @@
+/*Обнуление*/
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit; background-color: inherit}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+/*img{vertical-align: top;}*/
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+
+
+
+
+/*Подключение шрифтов*/
+/*нормальный*/
+@font-face {
+    font-family: "Lakes";
+    font-style: normal;
+    font-weight: 400;
+    src:local("Lakes"),
+    url("../fonts/TTLakes-Regular.woff");
+}
+
+
+/*Подключаем шрифрты*/
+/*жирный*/
+@font-face {
+    font-family: "Lakes";
+    font-style: normal;
+    font-weight: bold;
+    src:local("Lakes"),
+    url("../fonts/TTLakes-Bold.woff");
+}
+
+
+/*средний*/
+@font-face {
+    font-family: "Lakes";
+    font-style: normal;
+    font-weight: 500;
+    src:local("Lakes"),
+    url("../fonts/TTLakes-Medium.woff");
+}
+
+
+html {
+    font-family: Lakes,sans-serif;
+    font-size: 16px;
+}
+
+/*Ограничение по ширине и центровка*/
+.container{
+    width: 320px;
+    margin: 0 auto;
+    background: #F8F8F8;
+}
+
+/*Контейнер с паддинигами*/
+.wrapper{
+    padding: 0 16px;
+}
+
+.lg-title{
+    background-image: linear-gradient(to right, #F8F8F8 0%, #FFFFFF 100%);
+}
+
+.lg-title__text{
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+    padding: 16px 0;
+}
+
+.brand-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    background-color: white;
+    border: #EAEAEA solid 1px;
+    border-radius: 6px;
+    padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+    .container{
+        width: 768px;
+    }
+
+    .wrapper{
+        padding: 0 24px;
+    }
+}
+
+@media (min-width: 1120px) {
+
+    .container{
+        width: 1120px;
+    }
+
+    .wrapper{
+        padding: 0 32px;
+    }
+}
