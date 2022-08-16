@@ -101,6 +101,19 @@ html {
     padding: 16px 0;
 }
 
+.brands{
+    display: flex;
+    column-gap: 24px;
+    row-gap: 16px;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 176px;
+    transition: max-height 1s;
+
+}
+
 .brand-card{
     display: flex;
     align-items: center;
@@ -110,6 +123,36 @@ html {
     border: #EAEAEA solid 1px;
     border-radius: 6px;
     padding: 0 16px;
+    flex-basis: 224px;
+}
+
+.brand-card__btn{
+    background: url("../img/icon/go.svg");
+    width: 40px;
+    height: 40px;
+}
+
+.button{
+    display: flex;
+    gap:12px;
+    align-items: center;
+}
+
+.button__text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.button:before{
+    background: url(../img/readmore.png) no-repeat 50% 50%;
+    content: "";
+    height: 24px;
+    width: 24px;
+    transition: all 0.5s;
+}
+
+.button--reverse:before{
+    transform: rotate(180deg);
 }
 
 @media (min-width: 768px) {
@@ -130,5 +173,13 @@ html {
 
     .wrapper{
         padding: 0 32px;
+    }
+
+    .brands{
+        column-gap: 32px;
+    }
+
+    .brand-card{
+        width: 240px;
     }
 }
