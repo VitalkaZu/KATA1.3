@@ -82,6 +82,7 @@ html {
     width: 320px;
     margin: 0 auto;
     background: #F8F8F8;
+    min-width: 0;
 }
 
 /*Контейнер с паддинигами*/
@@ -123,7 +124,7 @@ html {
     border: #EAEAEA solid 1px;
     border-radius: 6px;
     padding: 0 16px;
-    flex-basis: 224px;
+    flex-basis: 240px;
 }
 
 .brand-card__btn{
@@ -155,6 +156,35 @@ html {
     transform: rotate(180deg);
 }
 
+.swiper-container{
+    overflow: hidden;
+    position: relative;
+}
+
+.swiper-pagination{
+    bottom: 0;
+}
+
+.swiper-pagination-bullet{
+    height: 12px;
+    width: 12px;
+}
+
+:root {
+    --swiper-theme-color: #B5B6BC;
+}
+
+.swiper__shadow{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 72px;
+    width: 24px;
+    background: linear-gradient(to right, rgba(248, 248, 248, 0.0001), #f8f8f8 100%);
+    z-index: 10;
+}
+
+
 @media (min-width: 768px) {
     .container{
         width: 768px;
@@ -163,6 +193,11 @@ html {
     .wrapper{
         padding: 0 24px;
     }
+
+    .brand-card{
+        flex-basis: 224px;
+    }
+
 }
 
 @media (min-width: 1120px) {
@@ -180,6 +215,6 @@ html {
     }
 
     .brand-card{
-        width: 240px;
+        flex-basis: 240px;
     }
 }
