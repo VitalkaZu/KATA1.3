@@ -102,7 +102,7 @@ html {
     padding: 16px 0;
 }
 
-.brands{
+.swiper-list{
     display: flex;
     column-gap: 24px;
     row-gap: 16px;
@@ -111,20 +111,30 @@ html {
     flex-wrap: wrap;
     overflow: hidden;
     max-height: 176px;
-    transition: max-height 1s;
+    transition: max-height 0.5s;
+}
 
+.brands-list--open{
+    height: 300px;
 }
 
 .brand-card{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
     height: 72px;
     background-color: white;
     border: #EAEAEA solid 1px;
     border-radius: 6px;
-    padding: 0 16px;
+
     flex-basis: 240px;
+}
+
+.brand-card__link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 0 16px;
 }
 
 .brand-card__btn{
@@ -137,6 +147,7 @@ html {
     display: flex;
     gap:12px;
     align-items: center;
+    display: none;
 }
 
 .button__text{
@@ -159,6 +170,7 @@ html {
 .swiper-container{
     overflow: hidden;
     position: relative;
+    height: 115px;
 }
 
 .swiper-pagination{
@@ -184,6 +196,23 @@ html {
     z-index: 10;
 }
 
+.swiper-slide {
+    /* a single column layout */
+    width: auto;
+}
+
+.swiper-pagination {
+    /* show on small viewports */
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination {
+        /* swiper is disabled at this breakpoint */
+        display: none;
+    }
+}
+
 
 @media (min-width: 768px) {
     .container{
@@ -198,6 +227,18 @@ html {
         flex-basis: 224px;
     }
 
+    .button {
+        display: flex;
+    }
+
+    .swiper-container{
+        height: auto;
+    }
+
+    .swiper__shadow{
+        display: none;
+    }
+
 }
 
 @media (min-width: 1120px) {
@@ -210,7 +251,7 @@ html {
         padding: 0 32px;
     }
 
-    .brands{
+    .swiper-list{
         column-gap: 32px;
     }
 
