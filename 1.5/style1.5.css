@@ -230,14 +230,6 @@ html {
 }
 
 @media (min-width: 768px) {
-    .swiper-pagination {
-        /* swiper is disabled at this breakpoint */
-        display: none;
-    }
-}
-
-
-@media (min-width: 768px) {
     .container{
         width: 768px;
     }
@@ -265,6 +257,11 @@ html {
 
     .section-remont {
         padding-bottom: 32px;
+    }
+
+    .swiper-pagination {
+        /* swiper is disabled at this breakpoint */
+        display: none;
     }
 }
 

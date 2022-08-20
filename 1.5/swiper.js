@@ -1,7 +1,7 @@
 var swiper = Swiper;
 var init = false;
 function swiperMode() {
-    let mobile = window.matchMedia("(min-width: 0px) and (max-width: 768px)");
+    let mobile = window.matchMedia("(min-width: 0px) and (max-width: 767px)");
     let swiperList = document.querySelector("#brands-list");
     if (mobile.matches) {
         if (!init) {
